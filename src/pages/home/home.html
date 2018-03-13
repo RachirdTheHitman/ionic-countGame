@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Assignment 2
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h2 text-center>Enter the right Code</h2>
+  <h5 text-center>{{ gameInfo }}</h5>
+  <ion-list>
+    <ion-item>Tapped: {{ numTap }}</ion-item>
+    <ion-item>Pressed: {{ numPress }}</ion-item>
+  </ion-list>
+  <app-buttons
+    (didReset)="onDidReset($event)"
+    (tapChange)="onTapChange($event)"
+    (pressChange)="onPressChange($event)"></app-buttons>
+
+
 </ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "first-assignment",
+  "app_id": "aecf65a4",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
